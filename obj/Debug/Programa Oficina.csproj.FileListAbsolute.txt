@@ -1,0 +1,39 @@
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.csproj.SuggestedBindingRedirects.cache
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Carros.frm_Novo_Carro.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.frm_Principal.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Properties.Resources.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\bin\Debug\Programa Oficina.exe.config
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\bin\Debug\Programa Oficina.exe
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\bin\Debug\Programa Oficina.pdb
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\bin\Debug\Newtonsoft.Json.xml
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.csproj.CopyComplete
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.exe
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa Oficina.pdb
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Clientes.frm_Novo_Cliente.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Clientes.frm_Clientes.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Clientes.frm_Ficha_Cliente.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Clientes.frm_Excluir_Cadastro.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Carros.frm_Carros.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Carros.frm_Ficha_Carro.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Carros.frm_Excluir_Carro.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Funcionario.frm_Novo_Funcionario.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Funcionario.frm_Funcionarios.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Funcionario.frm_Ficha_Funcionario.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Funcionario.frm_Desligar_Funcionario.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Funcionario.frm_Excluir_Funcionario.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Funcionario.frm_Religar_Funcionario.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Produtos.frm_Novo_Produto.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Produtos.frm_Produtos.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Produtos.frm_Ficha_Produto.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Produtos.frm_Excluir_Produto.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Serviços.frm_Novo_Servico.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Estoque.frm_Estoque.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Serviços.frm_Servicos.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Serviços.frm_Alterar_Servico.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Serviços.frm_Excluir_Servico.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Ordem_de_Serviço.frm_Nova_OS.resources
+C:\Users\leona\OneDrive\Área de Trabalho\Projeto Programa Oficina\Programa Oficina\Programa Oficina\obj\Debug\Programa_Oficina.Formulários.Ordem_de_Serviço.UC_Cliente.resources

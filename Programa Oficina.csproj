@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E06ED4D-7C24-4C03-8739-B9C76FE4CD11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Programa_Oficina</RootNamespace>
+    <AssemblyName>Programa Oficina</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\cls_Cep.cs" />
+    <Compile Include="Classes\cls_Carro.cs" />
+    <Compile Include="Classes\cls_Cliente.cs" />
+    <Compile Include="Classes\cls_Estoque.cs" />
+    <Compile Include="Classes\cls_Funcionario.cs" />
+    <Compile Include="Classes\cls_Produto.cs" />
+    <Compile Include="Classes\cls_Servico.cs" />
+    <Compile Include="Classes\Valida.cs" />
+    <Compile Include="Classes\ConexaoDB.cs" />
+    <Compile Include="Formulários\Carros\frm_Carros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Carros.Designer.cs">
+      <DependentUpon>frm_Carros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Excluir_Carro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Excluir_Carro.Designer.cs">
+      <DependentUpon>frm_Excluir_Carro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Ficha_Carro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Ficha_Carro.Designer.cs">
+      <DependentUpon>frm_Ficha_Carro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Novo_Carro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Carros\frm_Novo_Carro.Designer.cs">
+      <DependentUpon>frm_Novo_Carro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Clientes.Designer.cs">
+      <DependentUpon>frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Excluir_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Excluir_Cadastro.Designer.cs">
+      <DependentUpon>frm_Excluir_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Ficha_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Ficha_Cliente.Designer.cs">
+      <DependentUpon>frm_Ficha_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Novo_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Clientes\frm_Novo_Cliente.Designer.cs">
+      <DependentUpon>frm_Novo_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Estoque\frm_Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Estoque\frm_Estoque.Designer.cs">
+      <DependentUpon>frm_Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Desligar_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Desligar_Funcionario.Designer.cs">
+      <DependentUpon>frm_Desligar_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Excluir_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Excluir_Funcionario.Designer.cs">
+      <DependentUpon>frm_Excluir_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Ficha_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Ficha_Funcionario.Designer.cs">
+      <DependentUpon>frm_Ficha_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Funcionarios.Designer.cs">
+      <DependentUpon>frm_Funcionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Novo_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Novo_Funcionario.Designer.cs">
+      <DependentUpon>frm_Novo_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Religar_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Funcionario\frm_Religar_Funcionario.Designer.cs">
+      <DependentUpon>frm_Religar_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Ordem de Serviço\frm_Nova_OS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Ordem de Serviço\frm_Nova_OS.Designer.cs">
+      <DependentUpon>frm_Nova_OS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Ordem de Serviço\UC_Cliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formulários\Ordem de Serviço\UC_Cliente.Designer.cs">
+      <DependentUpon>UC_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Excluir_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Excluir_Produto.Designer.cs">
+      <DependentUpon>frm_Excluir_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Ficha_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Ficha_Produto.Designer.cs">
+      <DependentUpon>frm_Ficha_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Novo_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Novo_Produto.Designer.cs">
+      <DependentUpon>frm_Novo_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Produtos\frm_Produtos.Designer.cs">
+      <DependentUpon>frm_Produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Alterar_Servico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Alterar_Servico.Designer.cs">
+      <DependentUpon>frm_Alterar_Servico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Excluir_Servico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Excluir_Servico.Designer.cs">
+      <DependentUpon>frm_Excluir_Servico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Novo_Servico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Novo_Servico.Designer.cs">
+      <DependentUpon>frm_Novo_Servico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Servicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Serviços\frm_Servicos.Designer.cs">
+      <DependentUpon>frm_Servicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Principal.Designer.cs">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramaOficinaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProgramaOficinaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulários\Carros\frm_Carros.resx">
+      <DependentUpon>frm_Carros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Carros\frm_Excluir_Carro.resx">
+      <DependentUpon>frm_Excluir_Carro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Carros\frm_Ficha_Carro.resx">
+      <DependentUpon>frm_Ficha_Carro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Carros\frm_Novo_Carro.resx">
+      <DependentUpon>frm_Novo_Carro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Clientes\frm_Clientes.resx">
+      <DependentUpon>frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Clientes\frm_Excluir_Cadastro.resx">
+      <DependentUpon>frm_Excluir_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Clientes\frm_Ficha_Cliente.resx">
+      <DependentUpon>frm_Ficha_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Clientes\frm_Novo_Cliente.resx">
+      <DependentUpon>frm_Novo_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Estoque\frm_Estoque.resx">
+      <DependentUpon>frm_Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Funcionario\frm_Desligar_Funcionario.resx">
+      <DependentUpon>frm_Desligar_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Funcionario\frm_Excluir_Funcionario.resx">
+      <DependentUpon>frm_Excluir_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Funcionario\frm_Ficha_Funcionario.resx">
+      <DependentUpon>frm_Ficha_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Funcionario\frm_Funcionarios.resx">
+      <DependentUpon>frm_Funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Funcionario\frm_Novo_Funcionario.resx">
+      <DependentUpon>frm_Novo_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Funcionario\frm_Religar_Funcionario.resx">
+      <DependentUpon>frm_Religar_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Ordem de Serviço\frm_Nova_OS.resx">
+      <DependentUpon>frm_Nova_OS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Ordem de Serviço\UC_Cliente.resx">
+      <DependentUpon>UC_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Produtos\frm_Excluir_Produto.resx">
+      <DependentUpon>frm_Excluir_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Produtos\frm_Ficha_Produto.resx">
+      <DependentUpon>frm_Ficha_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Produtos\frm_Novo_Produto.resx">
+      <DependentUpon>frm_Novo_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Produtos\frm_Produtos.resx">
+      <DependentUpon>frm_Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Serviços\frm_Alterar_Servico.resx">
+      <DependentUpon>frm_Alterar_Servico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Serviços\frm_Excluir_Servico.resx">
+      <DependentUpon>frm_Excluir_Servico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Serviços\frm_Novo_Servico.resx">
+      <DependentUpon>frm_Novo_Servico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Serviços\frm_Servicos.resx">
+      <DependentUpon>frm_Servicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Principal.resx">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="ProgramaOficinaDataSet.xsc">
+      <DependentUpon>ProgramaOficinaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProgramaOficinaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProgramaOficinaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProgramaOficinaDataSet.xss">
+      <DependentUpon>ProgramaOficinaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1054250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78-786314_computer-user-icon-peolpe-avatar-group-people-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc4e28106595415.5f932eaabaf92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard-with-paper-document-and-bill-money-vector-30199288.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-96.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagens\Botoes\1054250.png" />
+    <Content Include="Imagens\Botoes\78-786314_computer-user-icon-peolpe-avatar-group-people-avatar.png" />
+    <Content Include="Imagens\Botoes\add-produto-botao.png" />
+    <Content Include="Imagens\Botoes\add-produto.png" />
+    <Content Include="Imagens\Botoes\car-icon-final.jpg" />
+    <Content Include="Imagens\Botoes\checkmark-icon.jpg" />
+    <Content Include="Imagens\Botoes\clipboard-with-paper-document-and-bill-money-vector-30199288.jpg" />
+    <Content Include="Imagens\Botoes\clipboard_add.png" />
+    <Content Include="Imagens\Botoes\delete-produto.png" />
+    <Content Include="Imagens\Botoes\delete-service-button.jpg" />
+    <Content Include="Imagens\Botoes\deletecar.png" />
+    <Content Include="Imagens\Botoes\Desativar-button.jpg" />
+    <Content Include="Imagens\Botoes\estoque-icon.jpg" />
+    <Content Include="Imagens\Botoes\icons8-delete-65.png" />
+    <Content Include="Imagens\Botoes\icons8-delete-view-80.png" />
+    <Content Include="Imagens\Botoes\icons8-edit-property-80.png" />
+    <Content Include="Imagens\Botoes\icons8-exit-40.png" />
+    <Content Include="Imagens\Botoes\icons8-exit-96.png" />
+    <Content Include="Imagens\Botoes\icons8-pesquisar-30.png" />
+    <Content Include="Imagens\Botoes\icons8-repeat-48.png" />
+    <Content Include="Imagens\Botoes\icons8-save-48.png" />
+    <Content Include="Imagens\Botoes\icons8-save-96.png" />
+    <Content Include="Imagens\Botoes\icons8-search-client-96.png" />
+    <Content Include="Imagens\Botoes\mecanico.png" />
+    <Content Include="Imagens\Botoes\plus-car-icon-resized.jpg" />
+    <Content Include="Imagens\Botoes\plus-service-button.jpg" />
+    <Content Include="Imagens\Botoes\produto-jpeg.jpg" />
+    <Content Include="Imagens\Botoes\search20px.png" />
+    <Content Include="Imagens\Botoes\servico-icon.jpg" />
+    <Content Include="Imagens\Botoes\Webp.net-resizeimage.png" />
+    <Content Include="Imagens\Icones\1054250.ico" />
+    <Content Include="Imagens\Icones\cars-icon.ico" />
+    <Content Include="Imagens\Icones\download.ico" />
+    <Content Include="Imagens\Icones\icons8-exit-96.ico" />
+    <Content Include="Imagens\Icones\icons8-save-96.ico" />
+    <Content Include="Imagens\Icones\icons8-search-client-96.ico" />
+    <Content Include="Imagens\Wallpapers\852380.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
